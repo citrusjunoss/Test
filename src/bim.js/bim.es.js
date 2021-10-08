@@ -2,11 +2,13 @@ class Bim {
     #canvas = null;
     #downloadedData = null
     #mainScriptUrlOrBlob = null
+    #manuallyDownloadedData = null;
     constructor(element) {
         this.canvas = element
+        this.init()
     }
 
-    async init() {
+    async #init() {
         try {
             const data = await this.download("realbim.data")
             this.manuallyDownloadedData = 1;
