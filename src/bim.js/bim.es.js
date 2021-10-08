@@ -1,4 +1,4 @@
-class Bim {
+Class Bim {
     #canvas = null;
     #downloadedData = null
     #mainScriptUrlOrBlob = null
@@ -69,6 +69,6 @@ class Bim {
             document.body.appendChild(script);
         });
     }
-
-
 }
+
+export default Bim;
